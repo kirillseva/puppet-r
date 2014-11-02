@@ -8,9 +8,9 @@
 class r {
 
   package { 'R_3_1_2':
-    provider => 'apple',
+    provider => 'compressed_pkg',
     ensure => present,
-    source   => 'http://cran.rstudio.com/bin/macosx/R-3.1.2-mavericks.pkg',
+    source   => 'http://r.research.att.com/mavericks/R-3.1-branch/R-3.1-branch-mavericks-sa-x86_64.tar.gz',
   }
 
 }
