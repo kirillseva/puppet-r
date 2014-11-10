@@ -10,7 +10,8 @@ class r {
 
   exec { 'Download R':
     command => $command,
-    before => Package['Install R']
+    before => Package['Install R'],
+    creates => '/opt/boxen/cache/R.pkg'
   }
   package { 'Install R':
     provider => 'apple',
